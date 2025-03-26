@@ -1,10 +1,20 @@
 import React from 'react'
-import './App.css'
+import Hero from './components/Hero.jsx'
+import Numbers from './components/Numbers.jsx'
+import Roadmap from './components/Roadmap.jsx'
+import FAQ from './components/FAQ.jsx'
+import ContactUs from './components/ContactUs.jsx'
+import Footer from './components/Footer.jsx'
 
 const App = () => {
 	return (
 		<div>
-			<h1 className="text-center text-fuchsia-800">hello worlds</h1>
+			<Hero />
+			<Numbers />
+			<Roadmap />
+			<FAQ />
+			<ContactUs />
+			<Footer />
 		</div>
 	)
 }
