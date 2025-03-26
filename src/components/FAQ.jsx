@@ -15,6 +15,7 @@ const FAQ = () => {
 			<div className="container-sm max-w-[725px]">
 				<h2 className="subtitle">FAQ</h2>
 				<div className="mt-[60px] flex flex-col gap-4">
+					{/* TODO expand logic */}
 					{questions.map(({ question, _answer }) => (
 						<div
 							key={question}

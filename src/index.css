@@ -24,6 +24,9 @@ body {
 	.container-sm {
 		@apply mx-auto w-full max-w-[725px] px-4 md:p-0;
 	}
+	.container-lg {
+		@apply mx-auto w-full max-w-[1340px] px-4 md:px-7 xl:px-5;
+	}
 	.subtitle {
 		@apply font-pixel text-center text-[80px] leading-[87%] tracking-[-1px] text-white;
 	}
