@@ -9,6 +9,8 @@ const ContactUs = () => {
 			<div className="container-sm">
 				<h2 className="subtitle">Contact us</h2>
 				<form onSubmit={onSubmit} className="mt-[60px] grid grid-cols-2 gap-3">
+					{/* TODO input states */}
+
 					<input
 						placeholder="Name"
 						className="font-inter border-4 border-[#2C1C5E] bg-[#110932] p-6 text-2xl tracking-[5px] text-[#AA8FFF] uppercase"
@@ -27,7 +29,7 @@ const ContactUs = () => {
 
 					<button
 						type="submit"
-						className="font-pixel relative col-span-2 cursor-pointer bg-[#BF00FF] p-3 text-center text-lg leading-[87%] tracking-[-1px] text-white shadow-[6.05px_6.05px_0px_0px_#6A17C2]"
+						className="font-pixel relative col-span-2 cursor-pointer bg-[#BF00FF] p-3 text-center text-lg leading-[87%] tracking-[-1px] text-white shadow-[6.05px_6.05px_0px_0px_#6A17C2] hover:bg-[#921EB9] hover:shadow-[6.05px_6.05px_0px_0px_#400084] active:bg-[#D968FF] active:shadow-[6.05px_6.05px_0px_0px_#7633BD]"
 					>
 						Send
 						<div className="absolute top-0 left-[26px] h-full w-[15px] -skew-x-[30deg] transform bg-white opacity-15"></div>

@@ -26,7 +26,9 @@ const Header = () => {
 						<div className="absolute top-0 right-0 h-1 w-1 bg-[#390257]"></div>
 						<div className="absolute right-0 bottom-0 h-1 w-1 bg-[#390257]"></div>
 					</div>
-					<div className="relative ml-3 flex h-min items-center bg-black px-8 py-2 shadow-[3px_3px_0px_0px_#1C1C1C]">
+
+					{/* TODO button states */}
+					<div className="relative ml-3 flex h-min items-center bg-black px-8 py-2 shadow-[3px_3px_0px_0px_#1C1C1C] hover:bg-[#111111] hover:shadow-[3px_3px_0px_0px_#414141] active:bg-[#323232] active:shadow-[3px_3px_0px_0px_#454545]">
 						<div className="flex h-4 w-4 items-center justify-center rounded-full border border-[#293842] bg-[#205039]">
 							<div className="h-2 w-2 rounded-full bg-[#00AA14]"></div>
 						</div>
