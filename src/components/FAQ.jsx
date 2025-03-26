@@ -18,12 +18,16 @@ const FAQ = () => {
 					{questions.map(({ question, _answer }) => (
 						<div
 							key={question}
-							className="flex items-center justify-between border-5 border-[#211846] bg-[#0A0617] px-6 py-5"
+							className="relative flex items-center justify-between border-5 border-[#211846] bg-[#0A0617] px-6 py-5"
 						>
 							<p className="font-inter text-2xl leading-[120%] font-medium text-white">
 								{question}
 							</p>
 							<img src={arrowDown} alt="arrow" />
+							<div className="absolute top-0 left-0 h-[5px] w-[5px] bg-[#211846]"></div>
+							<div className="absolute bottom-0 left-0 h-[5px] w-[5px] bg-[#211846]"></div>
+							<div className="absolute top-0 right-0 h-[5px] w-[5px] bg-[#211846]"></div>
+							<div className="absolute right-0 bottom-0 h-[5px] w-[5px] bg-[#211846]"></div>
 						</div>
 					))}
 				</div>

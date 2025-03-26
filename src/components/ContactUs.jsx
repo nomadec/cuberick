@@ -25,12 +25,13 @@ const ContactUs = () => {
 						type="text"
 					/>
 
-					{/* Todo add Bliks */}
 					<button
 						type="submit"
-						className="font-pixel col-span-2 cursor-pointer bg-[#BF00FF] p-3 text-center text-lg leading-[87%] tracking-[-1px] text-white shadow-[6.05px_6.05px_0px_0px_#6A17C2]"
+						className="font-pixel relative col-span-2 cursor-pointer bg-[#BF00FF] p-3 text-center text-lg leading-[87%] tracking-[-1px] text-white shadow-[6.05px_6.05px_0px_0px_#6A17C2]"
 					>
 						Send
+						<div className="absolute top-0 left-[26px] h-full w-[15px] -skew-x-[30deg] transform bg-white opacity-15"></div>
+						<div className="absolute top-0 left-[48px] h-full w-2.5 -skew-x-[30deg] transform bg-white opacity-15"></div>
 					</button>
 				</form>
 			</div>
