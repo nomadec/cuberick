@@ -2,6 +2,7 @@ import React from 'react'
 // eslint-disable-next-line import/no-unresolved
 import logoSvg from '/logo.svg'
 import accountsSvg from '../assets/accounts.svg'
+import greenDotSVG from '../assets/icons/green-dot.svg'
 
 const Header = () => {
 	return (
@@ -27,12 +28,12 @@ const Header = () => {
 						<div className="absolute right-0 bottom-0 h-1 w-1 bg-[#390257]"></div>
 					</div>
 
-					{/* TODO button states */}
-					<div className="relative ml-3 flex h-min items-center bg-black px-8 py-2 shadow-[3px_3px_0px_0px_#1C1C1C] hover:bg-[#111111] hover:shadow-[3px_3px_0px_0px_#414141] active:bg-[#323232] active:shadow-[3px_3px_0px_0px_#454545]">
-						<div className="flex h-4 w-4 items-center justify-center rounded-full border border-[#293842] bg-[#205039]">
+					<div className="relative ml-3 flex h-min items-center bg-black px-8 py-2 shadow-[3px_3px_0px_0px_#1C1C1C] hover:bg-[#2A2A2A] active:bg-[#757575] active:shadow-[3px_3px_0px_0px_#111111]">
+						{/* <div className="flex h-4 w-4 items-center justify-center rounded-full border border-[#293842] bg-[#205039]">
 							<div className="h-2 w-2 rounded-full bg-[#00AA14]"></div>
-						</div>
+						</div> */}
 						{/* <img className="pixelated" src={greenDot} alt="dot" /> */}
+						<img className="pixelated" src={greenDotSVG} alt="dot" />
 						<span className="font-pixel ml-2 text-lg leading-[87%] tracking-[-1px] text-white">
 							Join squad
 						</span>
