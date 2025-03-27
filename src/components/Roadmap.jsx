@@ -16,7 +16,7 @@ import onboarding from '../assets/roadmap/onboarding.png'
 import harvesterIcon from '../assets/roadmap/harvester-icon.png'
 import harvester from '../assets/roadmap/harvester.png'
 import gameplayIcon from '../assets/roadmap/gameplay-icon.png'
-// import gameplay from '../assets/roadmap/gameplay.png'
+import gameplay from '../assets/roadmap/gameplay.png'
 import clansIcon from '../assets/roadmap/clans-icon.png'
 import clans from '../assets/roadmap/clans.png'
 import adsIcon from '../assets/roadmap/ads-icon.png'
@@ -79,7 +79,7 @@ const roadmap = [
 		description: 'TNT, space anomalies, customizations, skins – full upgrade mode',
 		timeline: 'End of December',
 		icon: gameplayIcon,
-		image: cube
+		image: gameplay
 	},
 	{
 		title: 'Clans',
