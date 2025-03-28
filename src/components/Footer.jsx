@@ -1,11 +1,12 @@
 import React from 'react'
+import { Link } from 'react-router'
+
+import discord from '../assets/social-media/discord.png'
 import instagram from '../assets/social-media/instagram.png'
 import telegram from '../assets/social-media/telegram.png'
 import tiktok from '../assets/social-media/tiktok.png'
-import discord from '../assets/social-media/discord.png'
-import youtube from '../assets/social-media/youtube.png'
 import twitter from '../assets/social-media/twitter.png'
-import { Link } from 'react-router'
+import youtube from '../assets/social-media/youtube.png'
 
 const Footer = () => {
 	return (

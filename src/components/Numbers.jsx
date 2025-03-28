@@ -1,6 +1,20 @@
 import React from 'react'
 
 const Numbers = () => {
+	// const [DAU, setDAU] = useState(0)
+
+	// useEffect(() => {
+	// 	async function fetchData() {
+	// 		try {
+	// 			const { data } = await axios.get(`${BASE_URL}/daily_active_users`)
+	// 			setDAU(data.daily_active_users)
+	// 		} catch (e) {
+	// 			setDAU(0)
+	// 		}
+	// 	}
+
+	// 	fetchData()
+	// }, [])
 	return (
 		<div className="bg-[#0A061F] py-[60px] sm:py-28">
 			<div className="container">

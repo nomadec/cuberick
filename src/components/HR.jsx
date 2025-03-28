@@ -1,7 +1,8 @@
-import React from 'react'
-import pixelatedHR from '../assets/pixelated-hr.png'
 import clsx from 'clsx'
 import PropTypes from 'prop-types'
+import React from 'react'
+
+import pixelatedHR from '../assets/pixelated-hr.png'
 
 const HR = ({ rotate = false }) => {
 	return (

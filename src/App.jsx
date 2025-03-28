@@ -1,4 +1,5 @@
 import { Route, Routes } from 'react-router'
+
 import Home from './screens/Home.jsx'
 import PrivacyPolicy from './screens/PrivacyPolicy.jsx'
 import TermsOfUse from './screens/TermsOfUse.jsx'

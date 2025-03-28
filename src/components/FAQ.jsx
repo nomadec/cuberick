@@ -1,6 +1,7 @@
-import React, { useState } from 'react'
-import arrowDown from '../assets/icons/arrow-down.svg'
 import clsx from 'clsx'
+import React, { useState } from 'react'
+
+import arrowDown from '../assets/icons/arrow-down.svg'
 
 const questions = [
 	{

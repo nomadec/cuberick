@@ -8,7 +8,10 @@
 	"jsxSingleQuote": false,
 	"useTabs": true,
 	"experimentalTernaries": true,
-	"plugins": ["prettier-plugin-tailwindcss"],
+	"importOrder": ["<THIRD_PARTY_MODULES>", "^[./]"],
+	"importOrderSeparation": true,
+	"importOrderSortSpecifiers": true,
+	"plugins": ["prettier-plugin-tailwindcss", "@trivago/prettier-plugin-sort-imports"],
 	"tailwindFunctions": ["clsx"],
 	"endOfLine": "lf"
 }

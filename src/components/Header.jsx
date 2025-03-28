@@ -1,12 +1,13 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
-// eslint-disable-next-line import/no-unresolved
-import logoSvg from '/logo.svg'
+
 import accountsSvg from '../assets/accounts.svg'
 import greenDotSVG from '../assets/icons/green-dot.svg'
 import networkErrorSVG from '../assets/icons/network-error.svg'
-import { formatNumber } from '../shared/lib'
 import { BASE_URL } from '../shared/consts'
+import { formatNumber } from '../shared/lib'
+// eslint-disable-next-line import/no-unresolved
+import logoSvg from '/logo.svg'
 
 const Header = () => {
 	const [connection, setConnection] = useState(false)
