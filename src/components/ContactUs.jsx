@@ -42,32 +42,33 @@ const ContactUs = () => {
 	}
 
 	return (
-		<div className="bg-[#0A061F] py-[30px]">
+		<div className="bg-[#0A061F] py-[30px] sm:py-[30px]">
 			<div className="container-sm">
 				<h2 className="subtitle">Contact us</h2>
-				<form onSubmit={handleSubmit(onSubmit)} className="mt-[60px] grid grid-cols-2 gap-3">
-					{/* TODO input states */}
-
-					<div>
+				<form
+					onSubmit={handleSubmit(onSubmit)}
+					className="mt-8 grid grid-cols-2 gap-3 sm:mt-[60px]"
+				>
+					<div className="col-span-2 sm:col-span-1">
 						<input
 							{...register('name', formValidation.name)}
 							autoComplete="given-name"
 							placeholder="Name"
 							className={clsx(
-								'font-inter w-full border-4 border-[#2C1C5E] bg-[#110932] p-6 text-2xl tracking-[5px] text-[#AA8FFF] uppercase focus:border-[#7259C1]',
+								'font-inter w-full border-4 border-[#2C1C5E] bg-[#110932] px-6 py-[14px] text-base tracking-[3.5px] text-[#AA8FFF] uppercase focus:border-[#7259C1] sm:py-6 sm:text-2xl sm:tracking-[6px]',
 								errors.name && 'border-[#FF5656]'
 							)}
 							type="text"
 						/>
 						{errors.name && <p className="mt-1 text-sm text-[#FF5656]">{errors.name.message}</p>}
 					</div>
-					<div>
+					<div className="col-span-2 sm:col-span-1">
 						<input
 							{...register('email', formValidation.email)}
 							autoComplete="email"
 							placeholder="E-mail"
 							className={clsx(
-								'font-inter w-full border-4 border-[#2C1C5E] bg-[#110932] p-6 text-2xl tracking-[5px] text-[#AA8FFF] uppercase focus:border-[#7259C1]',
+								'font-inter w-full border-4 border-[#2C1C5E] bg-[#110932] px-6 py-[14px] text-base tracking-[3.5px] text-[#AA8FFF] uppercase focus:border-[#7259C1] sm:py-6 sm:text-2xl sm:tracking-[6px]',
 								errors.email && 'border-[#FF5656]'
 							)}
 							type="email"
@@ -80,7 +81,7 @@ const ContactUs = () => {
 							{...register('message', formValidation.message)}
 							placeholder="Message"
 							className={clsx(
-								'font-inter field-sizing-content min-h-96 w-full border-4 border-[#2C1C5E] bg-[#110932] p-6 text-2xl tracking-[5px] text-[#AA8FFF] uppercase focus:border-[#7259C1]',
+								'font-inter field-sizing-content min-h-32 w-full border-4 border-[#2C1C5E] bg-[#110932] px-6 py-[14px] text-base tracking-[3.5px] text-[#AA8FFF] uppercase focus:border-[#7259C1] sm:min-h-96 sm:py-6 sm:text-2xl sm:tracking-[6px]',
 								errors.message && 'border-[#FF5656]'
 							)}
 							type="text"

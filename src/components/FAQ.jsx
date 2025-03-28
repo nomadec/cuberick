@@ -38,10 +38,10 @@ const FAQ = () => {
 	}
 
 	return (
-		<div className="bg-[#0A061F] py-[90px]">
+		<div className="bg-[#0A061F] pt-[60px] pb-[30px] sm:py-[90px]">
 			<div className="container-sm max-w-[725px]">
 				<h2 className="subtitle">FAQ</h2>
-				<div className="mt-[60px] flex flex-col gap-4">
+				<div className="mt-8 flex flex-col gap-4 sm:mt-[60px]">
 					{questions.map(({ question, answer }) => {
 						const isExpanded = expanded.includes(question)
 
@@ -50,12 +50,12 @@ const FAQ = () => {
 								key={question}
 								onClick={() => toggleExpanded(question)}
 								onKeyUp={(e) => onKeyUp(e, question)}
-								className="relative flex cursor-pointer flex-col border-5 border-[#211846] bg-[#0A0617] px-6 py-5"
+								className="relative flex cursor-pointer flex-col border-5 border-[#211846] bg-[#0A0617] p-4 sm:p-6"
 								role="button"
 								tabIndex="0"
 							>
 								<div className="flex items-center justify-between">
-									<p className="font-inter text-2xl leading-[120%] font-medium text-white">
+									<p className="font-inter text:base leading-[120%] font-medium text-white sm:text-2xl">
 										{question}
 									</p>
 									<img
@@ -66,7 +66,7 @@ const FAQ = () => {
 								</div>
 								<p
 									className={clsx(
-										'font-inter max-h-0 overflow-hidden text-lg leading-[145%] text-[#B9B9B9] transition-all duration-500 ease-in-out',
+										'font-inter max-h-0 overflow-hidden text-xs leading-[145%] text-[#B9B9B9] transition-all duration-300 ease-in-out sm:text-lg',
 										isExpanded && 'mt-3 max-h-96'
 									)}
 								>

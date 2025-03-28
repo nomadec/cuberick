@@ -8,17 +8,29 @@ import twitter from '../assets/social-media/twitter.png'
 
 const Footer = () => {
 	return (
-		<footer className="bg-[#0A061F] py-[90px]">
+		<footer className="bg-[#0A061F] py-[30px] sm:py-[90px]">
 			<div className="container-sm">
-				<div className="flex items-center justify-between">
-					<img src={instagram} alt="instagram" />
-					<img src={telegram} alt="telegram" />
-					<img src={tiktok} alt="tiktok" />
-					<img src={discord} alt="discord" />
-					<img src={youtube} alt="youtube" />
-					<img src={twitter} alt="twitter" />
+				<div className="flex w-full items-center">
+					<div className="w-full">
+						<img className="w-full" src={instagram} alt="instagram" />
+					</div>
+					<div className="w-full">
+						<img className="w-full" src={telegram} alt="telegram" />
+					</div>
+					<div className="w-full">
+						<img className="w-full" src={tiktok} alt="tiktok" />
+					</div>
+					<div className="w-full">
+						<img className="w-full" src={discord} alt="discord" />
+					</div>
+					<div className="w-full">
+						<img className="w-full" src={youtube} alt="youtube" />
+					</div>
+					<div className="w-full">
+						<img className="w-full" src={twitter} alt="twitter" />
+					</div>
 				</div>
-				<div className="mt-10 flex items-center justify-between">
+				<div className="mt-6 flex flex-col items-start gap-3 sm:mt-10 sm:flex-row sm:items-center sm:justify-between">
 					<p className="text-inter text-white opacity-70">Copyright © 2024 CUBERICK</p>
 					<p className="text-inter text-white opacity-70">Privacy Policy</p>
 					<p className="text-inter text-white opacity-70">Terms of Use</p>
