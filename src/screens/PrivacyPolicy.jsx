@@ -1,15 +1,17 @@
 import React from 'react'
-import { Link } from 'react-router'
+
+import TermsAndConditions from '../components/TermsAndConditions.jsx'
+import { privacyPolicy } from '../shared/content'
 
 const PrivacyPolicy = () => {
 	return (
-		<div className="pt-10">
-			<Link to="/">
-				<h1 className="font-pixel text-outline container text-center text-[40px] leading-[105%] text-white sm:mt-24 sm:text-[100px] sm:leading-[90%] sm:tracking-[-1px]">
-					PrivacyPolicy
-				</h1>
-			</Link>
-		</div>
+		<TermsAndConditions
+			heading="Privacy Policy for Cuberick"
+			text1="At Cuberick, your privacy is our priority. This policy outlines how we collect, use, and
+						protect your personal information"
+			text2="By using Cuberick, you consent to our Privacy Policy."
+			data={privacyPolicy}
+		/>
 	)
 }
 

@@ -1,15 +1,16 @@
 import React from 'react'
-import { Link } from 'react-router'
+
+import TermsAndConditions from '../components/TermsAndConditions.jsx'
+import { termsOfUse } from '../shared/content'
 
 const TermsOfUse = () => {
 	return (
-		<div className="pt-10">
-			<Link to="/">
-				<h1 className="font-pixel text-outline container text-center text-[40px] leading-[105%] text-white sm:mt-24 sm:text-[100px] sm:leading-[90%] sm:tracking-[-1px]">
-					TermsOfUse
-				</h1>
-			</Link>
-		</div>
+		<TermsAndConditions
+			heading="Terms of Use for Cuberick"
+			text1="Welcome to Cuberick. By accessing or using our mini-app, you agree to the following terms:"
+			text2="By using Cuberick, you acknowledge that you have read, understood, and agree to these Terms of Use."
+			data={termsOfUse}
+		/>
 	)
 }
 

@@ -2,22 +2,7 @@ import clsx from 'clsx'
 import React, { useState } from 'react'
 
 import arrowDown from '../assets/icons/arrow-down.svg'
-
-const questions = [
-	{
-		question: 'How to start playing?1',
-		answer:
-			'Lorem ipsum dolor sit amet consectetur. Felis bibendum egestas sem rutrum quam amet nisi. Elementum pharetra proin laoreet feugiat at vulputate purus purus vitae. Sodales diam arcu eget condimentum amet a at aenean nibh. Vestibulum odio sodales eu nunc enim ac cras malesuada morbi.'
-	},
-	{ question: 'How to start playing?2', answer: "I don't know" },
-	{
-		question: 'How to start playing?3',
-		answer:
-			'Lorem ipsum dolor sit amet consectetur. Felis bibendum egestas sem rutrum quam amet nisi. Elementum pharetra proin laoreet feugiat at vulputate purus purus vitae. Sodales diam arcu eget condimentum amet a at aenean nibh. Vestibulum odio sodales eu nunc enim ac cras malesuada morbi.'
-	},
-	{ question: 'How to start playing?4', answer: "I don't know" },
-	{ question: 'How to start playing?5', answer: "I don't know" }
-]
+import { faq } from '../shared/content'
 
 const FAQ = () => {
 	const [expanded, setExpanded] = useState([])
@@ -43,19 +28,21 @@ const FAQ = () => {
 			<div className="container-sm max-w-[725px]">
 				<h2 className="subtitle">FAQ</h2>
 				<div className="mt-8 flex flex-col gap-4 sm:mt-[60px]">
-					{questions.map(({ question, answer }) => {
+					{faq.map(({ question, answer }) => {
 						const isExpanded = expanded.includes(question)
 
 						return (
 							<div
 								key={question}
-								onClick={() => toggleExpanded(question)}
-								onKeyUp={(e) => onKeyUp(e, question)}
-								className="relative flex cursor-pointer flex-col border-5 border-[#211846] bg-[#0A0617] p-4 sm:p-6"
-								role="button"
-								tabIndex="0"
+								className="relative flex flex-col border-5 border-[#211846] bg-[#0A0617] p-4 sm:p-6"
 							>
-								<div className="flex items-center justify-between">
+								<div
+									className="flex cursor-pointer items-center justify-between"
+									onClick={() => toggleExpanded(question)}
+									onKeyUp={(e) => onKeyUp(e, question)}
+									role="button"
+									tabIndex="0"
+								>
 									<p className="font-inter text:base leading-[120%] font-medium text-white sm:text-2xl">
 										{question}
 									</p>
