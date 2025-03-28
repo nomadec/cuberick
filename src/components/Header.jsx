@@ -1,10 +1,12 @@
 import PropTypes from 'prop-types'
 import React from 'react'
 
+import { formatNumber } from '../shared/lib'
+
 import accountsSvg from '../assets/accounts.svg'
 import greenDotSVG from '../assets/icons/green-dot.svg'
 import networkErrorSVG from '../assets/icons/network-error.svg'
-import { formatNumber } from '../shared/lib'
+
 // eslint-disable-next-line import/no-unresolved
 import logoSvg from '/logo.svg'
 

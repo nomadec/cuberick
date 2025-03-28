@@ -1,8 +1,9 @@
 import clsx from 'clsx'
 import React, { useState } from 'react'
 
-import arrowDown from '../assets/icons/arrow-down.svg'
 import { faq } from '../shared/content'
+
+import arrowDown from '../assets/icons/arrow-down.svg'
 
 const FAQ = () => {
 	const [expanded, setExpanded] = useState([])

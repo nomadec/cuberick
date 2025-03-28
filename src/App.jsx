@@ -1,9 +1,10 @@
 import { Route, Routes } from 'react-router'
 
-import ScrollToTop from './components/ScrollToTop.js'
 import Home from './screens/Home.jsx'
 import PrivacyPolicy from './screens/PrivacyPolicy.jsx'
 import TermsOfUse from './screens/TermsOfUse.jsx'
+
+import ScrollToTop from './components/ScrollToTop.js'
 
 const App = () => {
 	return (

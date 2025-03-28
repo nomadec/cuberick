@@ -4,6 +4,7 @@ import { Link } from 'react-router'
 
 import arrowLeftSvg from '../assets/icons/arrow-left.svg'
 import logo2dSvg from '../assets/icons/logo-2d.svg'
+
 import Footer from './Footer.jsx'
 // eslint-disable-next-line import/no-unresolved
 import logoSvg from '/logo.svg'

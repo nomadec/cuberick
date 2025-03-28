@@ -1,6 +1,7 @@
 import React from 'react'
 
 import TermsAndConditions from '../components/TermsAndConditions.jsx'
+
 import { privacyPolicy } from '../shared/content'
 
 const PrivacyPolicy = () => {

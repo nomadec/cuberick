@@ -2,10 +2,12 @@ import clsx from 'clsx'
 import PropTypes from 'prop-types'
 import React from 'react'
 
+import { roadmap } from '../shared/content.js'
+
 import caretUp from '../assets/icons/caret-up.svg'
 import checkmark from '../assets/icons/checkmark.svg'
 import rocket from '../assets/icons/rocket.svg'
-import { roadmap } from '../shared/content.js'
+
 import HR from './HR.jsx'
 
 const currentStep = 4
