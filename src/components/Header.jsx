@@ -1,33 +1,14 @@
-import axios from 'axios'
-import React, { useEffect, useState } from 'react'
+import PropTypes from 'prop-types'
+import React from 'react'
 
 import accountsSvg from '../assets/accounts.svg'
 import greenDotSVG from '../assets/icons/green-dot.svg'
 import networkErrorSVG from '../assets/icons/network-error.svg'
-import { BASE_URL } from '../shared/consts'
 import { formatNumber } from '../shared/lib'
 // eslint-disable-next-line import/no-unresolved
 import logoSvg from '/logo.svg'
 
-const Header = () => {
-	const [connection, setConnection] = useState(false)
-	const [playersOnline, setPlayersOnline] = useState(0)
-
-	useEffect(() => {
-		async function fetchData() {
-			try {
-				const { data } = await axios.get(`${BASE_URL}/active_players_count`)
-				setConnection(true)
-				setPlayersOnline(data.active_players_count)
-			} catch (e) {
-				setConnection(false)
-				setPlayersOnline(0)
-			}
-		}
-
-		fetchData()
-	}, [])
-
+const Header = ({ connection, playersOnline }) => {
 	return (
 		<header>
 			<div className="container flex justify-between">
@@ -65,6 +46,11 @@ const Header = () => {
 			</div>
 		</header>
 	)
+}
+
+Header.propTypes = {
+	connection: PropTypes.bool,
+	playersOnline: PropTypes.number
 }
 
 export default Header
