@@ -126,7 +126,7 @@ const roadmap = [
 	}
 ]
 
-const currentStep = 3
+const currentStep = 4
 
 const Roadmap = () => {
 	return (
@@ -187,7 +187,7 @@ function DesktopItem({ item, index }) {
 			<div
 				className={clsx(
 					'relative z-10 mx-28 flex h-[55px] min-w-[55px] items-center justify-center rounded-2xl bg-[#60A917]',
-					currentStep == index && 'bg-[#9500FF]',
+					currentStep == index && 'bg-[#FFE800]',
 					currentStep < index && 'bg-[#9500FF]'
 				)}
 			>
@@ -234,7 +234,7 @@ function MobileItem({ item, index }) {
 			<div
 				className={clsx(
 					'relative z-10 mt-2.5 flex h-10 min-w-10 items-center justify-center rounded-2xl bg-[#60A917]',
-					currentStep == index && 'bg-[#9500FF]',
+					currentStep == index && 'bg-[#FFE800]',
 					currentStep < index && 'bg-[#9500FF]'
 				)}
 			>
