@@ -5,6 +5,7 @@ import tiktok from '../assets/social-media/tiktok.png'
 import discord from '../assets/social-media/discord.png'
 import youtube from '../assets/social-media/youtube.png'
 import twitter from '../assets/social-media/twitter.png'
+import { Link } from 'react-router'
 
 const Footer = () => {
 	return (
@@ -32,8 +33,12 @@ const Footer = () => {
 				</div>
 				<div className="mt-6 flex flex-col items-start gap-3 sm:mt-10 sm:flex-row sm:items-center sm:justify-between">
 					<p className="text-inter text-white opacity-70">Copyright © 2024 CUBERICK</p>
-					<p className="text-inter text-white opacity-70">Privacy Policy</p>
-					<p className="text-inter text-white opacity-70">Terms of Use</p>
+					<Link to="/privacy-policy" className="text-inter text-white opacity-70">
+						Privacy Policy
+					</Link>
+					<Link to="terms-of-use" className="text-inter text-white opacity-70">
+						Terms of Use
+					</Link>
 				</div>
 			</div>
 		</footer>

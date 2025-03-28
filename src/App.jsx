@@ -1,21 +1,15 @@
-import React from 'react'
-import Hero from './components/Hero.jsx'
-import Numbers from './components/Numbers.jsx'
-import Roadmap from './components/Roadmap.jsx'
-import FAQ from './components/FAQ.jsx'
-import ContactUs from './components/ContactUs.jsx'
-import Footer from './components/Footer.jsx'
+import { Route, Routes } from 'react-router'
+import Home from './screens/Home.jsx'
+import PrivacyPolicy from './screens/PrivacyPolicy.jsx'
+import TermsOfUse from './screens/TermsOfUse.jsx'
 
 const App = () => {
 	return (
-		<div>
-			<Hero />
-			<Numbers />
-			<Roadmap />
-			<FAQ />
-			<ContactUs />
-			<Footer />
-		</div>
+		<Routes>
+			<Route path="/" element={<Home />} />
+			<Route path="/privacy-policy" element={<PrivacyPolicy />} />
+			<Route path="/terms-of-use" element={<TermsOfUse />} />
+		</Routes>
 	)
 }
 
