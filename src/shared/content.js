@@ -143,7 +143,7 @@ export const faq = [
 	{
 		question: 'Is Cuberick free to play?',
 		answer:
-			'Yes, Cuberick is completely free. There are no pay-to-win elements—your success is determined by your engagement, skill, and readiness to fight for the ultimate prize.'
+			'Yes, Cuberick is completely free. Your progress and success in the game are driven by your engagement, skill, and determination to compete for the ultimate prize. We focus on rewarding dedication, giving every player the chance to earn rewards through consistent gameplay and upgrades.'
 	},
 	{
 		question: 'Which blockchain will Cuberick use for token generation?',
