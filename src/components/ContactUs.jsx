@@ -2,6 +2,8 @@ import { clsx } from 'clsx'
 import React from 'react'
 import { useForm } from 'react-hook-form'
 
+import { send_message } from '../shared/telegram'
+
 const formValidation = {
 	name: {
 		required: 'Enter your name please',
@@ -38,7 +40,7 @@ const ContactUs = () => {
 	})
 
 	const onSubmit = (data) => {
-		console.log(data)
+		send_message(data)
 	}
 
 	return (
