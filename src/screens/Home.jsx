@@ -1,3 +1,4 @@
+import axios from 'axios'
 import { useEffect, useState } from 'react'
 
 import ContactUs from '../components/ContactUs.jsx'
@@ -7,10 +8,12 @@ import Hero from '../components/Hero.jsx'
 import Numbers from '../components/Numbers.jsx'
 import Roadmap from '../components/Roadmap.jsx'
 
+import { BASE_URL } from '../shared/consts.js'
+
 function getMockData() {
 	const data = {
-		playersOnline: 5000,
-		total_players: 1000123,
+		online_players_count: 4000,
+		total_players_count: 1000123,
 		daily_active_users: 13982,
 		monthly_active_users: 55873
 	}
@@ -31,12 +34,12 @@ const Home = () => {
 	useEffect(() => {
 		async function fetchData() {
 			try {
-				// const { data } = await axios.get(`${BASE_URL}/active_players_count`)
-				const { data } = await getMockData()
+				const { data } = await axios.get(`${BASE_URL}/landing`)
+				// const { data } = await getMockData()
 
 				setConnection(true)
-				setPlayersOnline(data.playersOnline)
-				setTotalPlayers(data.total_players)
+				setPlayersOnline(data.online_players_count)
+				setTotalPlayers(data.total_players_count)
 				setDAU(data.daily_active_users)
 				setMAU(data.monthly_active_users)
 			} catch (e) {
