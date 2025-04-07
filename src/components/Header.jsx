@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types'
 import React from 'react'
 
+import { MINI_APP_URL } from '../shared/consts'
 import { formatNumber } from '../shared/lib'
 
 import accountsSvg from '../assets/accounts.svg'
@@ -36,14 +37,20 @@ const Header = ({ connection, playersOnline }) => {
 						<div className="absolute right-0 bottom-0 h-1 w-1 bg-[#390257]"></div>
 					</div>
 
-					<div className="relative ml-4 flex h-min items-center bg-black px-4 py-2 shadow-[3px_3px_0px_0px_#1C1C1C] hover:bg-[#2A2A2A] active:bg-[#757575] active:shadow-[3px_3px_0px_0px_#111111] sm:ml-3 sm:px-8">
-						<img className="pixelated" src={connection ? greenDotSVG : networkErrorSVG} alt="dot" />
-						<span className="font-pixel ml-2 text-base leading-[87%] tracking-[-1px] text-white sm:text-lg">
-							{connection ? 'Join squad' : 'No network'}
-						</span>
-						<div className="absolute top-0 left-[26px] h-full w-[15px] -skew-x-[30deg] transform bg-white opacity-15"></div>
-						<div className="absolute top-0 left-[48px] h-full w-2.5 -skew-x-[30deg] transform bg-white opacity-15"></div>
-					</div>
+					<a href={MINI_APP_URL} target="_blank" rel="noreferrer">
+						<div className="relative ml-4 flex h-min items-center bg-black px-4 py-2 shadow-[3px_3px_0px_0px_#1C1C1C] hover:bg-[#2A2A2A] active:bg-[#757575] active:shadow-[3px_3px_0px_0px_#111111] sm:ml-3 sm:px-8">
+							<img
+								className="pixelated"
+								src={connection ? greenDotSVG : networkErrorSVG}
+								alt="dot"
+							/>
+							<span className="font-pixel ml-2 text-base leading-[87%] tracking-[-1px] text-white sm:text-lg">
+								{connection ? 'Join squad' : 'No network'}
+							</span>
+							<div className="absolute top-0 left-[26px] h-full w-[15px] -skew-x-[30deg] transform bg-white opacity-15"></div>
+							<div className="absolute top-0 left-[48px] h-full w-2.5 -skew-x-[30deg] transform bg-white opacity-15"></div>
+						</div>
+					</a>
 				</div>
 			</div>
 		</header>
