@@ -34,7 +34,7 @@ const Home = () => {
 	useEffect(() => {
 		async function fetchData() {
 			try {
-				const { data } = await axios.get(`${BASE_URL}/landing`)
+				const { data } = await axios.get(`${BASE_URL}/metrics/summary`)
 				// const { data } = await getMockData()
 
 				setConnection(true)
