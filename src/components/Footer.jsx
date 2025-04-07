@@ -17,7 +17,9 @@ const Footer = () => {
 						<img className="w-full" src={instagram} alt="instagram" />
 					</div>
 					<div className="w-full">
-						<img className="w-full" src={telegram} alt="telegram" />
+						<a href="https://t.me/cuberick_official" target="_blank" rel="noreferrer">
+							<img className="w-full" src={telegram} alt="telegram" />
+						</a>
 					</div>
 					<div className="w-full">
 						<img className="w-full" src={tiktok} alt="tiktok" />
