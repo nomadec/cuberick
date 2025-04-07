@@ -1,7 +1,7 @@
 import clsx from 'clsx'
 import React, { useState } from 'react'
 
-import { faq } from '../shared/content'
+import { faq } from '../shared/content.jsx'
 
 import arrowDown from '../assets/icons/arrow-down.svg'
 

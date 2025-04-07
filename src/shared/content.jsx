@@ -157,7 +157,20 @@ export const faq = [
 	},
 	{
 		question: 'Who can I contact for support?',
-		answer: 'For assistance, please contact our support at https://t.me/cubericksupport.'
+		answer: (
+			<>
+				For assistance, please contact our support at{' '}
+				<a
+					className="underline"
+					href="https://t.me/cubericksupport"
+					target="_blank"
+					rel="noreferrer"
+				>
+					https://t.me/cubericksupport
+				</a>
+				.
+			</>
+		)
 	}
 ]
 

@@ -2,7 +2,7 @@ import React from 'react'
 
 import TermsAndConditions from '../components/TermsAndConditions.jsx'
 
-import { termsOfUse } from '../shared/content'
+import { termsOfUse } from '../shared/content.jsx'
 
 const TermsOfUse = () => {
 	return (

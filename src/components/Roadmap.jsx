@@ -2,7 +2,7 @@ import clsx from 'clsx'
 import PropTypes from 'prop-types'
 import React from 'react'
 
-import { roadmap } from '../shared/content.js'
+import { roadmap } from '../shared/content.jsx'
 
 import caretUp from '../assets/icons/caret-up.svg'
 import checkmark from '../assets/icons/checkmark.svg'
