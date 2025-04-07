@@ -40,8 +40,16 @@ const Home = () => {
 				setConnection(true)
 				setPlayersOnline(data.online_players_count)
 				setTotalPlayers(data.total_players_count)
-				setDAU(data.daily_active_users)
-				setMAU(data.monthly_active_users)
+
+				const todayDAU = data.daily_active_users.toSorted(
+					(a, b) => b.day_timestamp - a.day_timestamp
+				)[0]
+				if (todayDAU) setDAU(todayDAU.count)
+
+				const todayMAU = data.monthly_active_users.toSorted(
+					(a, b) => b.month_timestamp - a.month_timestamp
+				)[0]
+				if (todayMAU) setMAU(todayMAU.count)
 			} catch (e) {
 				setConnection(false)
 			}
