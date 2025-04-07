@@ -75,7 +75,7 @@ function DesktopItem({ item, index }) {
 					currentStep < index && 'bg-[#9500FF]'
 				)}
 			>
-				<img src={item.icon} alt={`${item.title} icon`} />
+				<img className="w-10" src={item.icon} alt={`${item.title} icon`} />
 				<div
 					className={clsx(
 						'absolute top-1/2 h-[3px] w-28 -translate-y-1/2 bg-[#60A917]',
