@@ -16,7 +16,7 @@ const Roadmap = () => {
 	return (
 		<div className="relative bg-[#110E1E] py-24">
 			<HR rotate />
-			<div className="container-lg">
+			<div className="container-lg 2xl:py-20">
 				<h2 className="subtitle">Roadmap</h2>
 				<div className="relative mt-20 flex flex-col gap-[120px] md:mt-36">
 					{roadmap.map((item, index) => (
