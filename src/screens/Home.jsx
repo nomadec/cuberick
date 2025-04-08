@@ -41,15 +41,17 @@ const Home = () => {
 				setPlayersOnline(data.online_players_count)
 				setTotalPlayers(data.total_players_count)
 
-				const todayDAU = data.daily_active_users.toSorted(
-					(a, b) => b.day_timestamp - a.day_timestamp
-				)[0]
-				if (todayDAU) setDAU(todayDAU.count)
+				const averageDAU = data.daily_active_users.reduce(
+					(acc, item, _, { length }) => acc + item.count / length,
+					0
+				)
+				setDAU(averageDAU)
 
-				const todayMAU = data.monthly_active_users.toSorted(
-					(a, b) => b.month_timestamp - a.month_timestamp
-				)[0]
-				if (todayMAU) setMAU(todayMAU.count)
+				const averageMAU = data.monthly_active_users.reduce(
+					(acc, item, _, { length }) => acc + item.count / length,
+					0
+				)
+				setMAU(averageMAU)
 			} catch (e) {
 				setConnection(false)
 			}
