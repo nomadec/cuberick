@@ -28,7 +28,8 @@ import season2 from '../assets/roadmap/season-2.png'
 export const roadmap = [
 	{
 		title: '3D Cube',
-		description: 'Dropping the first-ever multiplayer game engine in TMA',
+		description:
+			'Advanced game engine for TMA that displays hundreds of millions of destructible particles.',
 		timeline: 'October 2024',
 		icon: cubeIcon,
 		image: cube
@@ -42,7 +43,8 @@ export const roadmap = [
 	},
 	{
 		title: 'Referral System, Tasks',
-		description: 'Dropping the first-ever multiplayer game engine in TMA',
+		description:
+			'Advanced game engine for TMA that displays hundreds of millions of destructible particles.',
 		timeline: 'January 2025',
 		icon: referralsIcon,
 		image: referrals
@@ -63,7 +65,8 @@ export const roadmap = [
 	},
 	{
 		title: 'Onboarding Mechanics',
-		description: 'Dropping the first-ever multiplayer game engine in TMA',
+		description:
+			'Advanced game engine for TMA that displays hundreds of millions of destructible particles.',
 		timeline: 'May 2025',
 		icon: onboardingIcon,
 		image: onboarding
@@ -91,7 +94,8 @@ export const roadmap = [
 	},
 	{
 		title: 'MEGA last  layer Event',
-		description: 'Form your squads and roll out together',
+		description:
+			'Battle in the final layer for the Grand Prize and exclusive rewards, plus a CBRICK token drop.',
 		timeline: 'Q4 2025',
 		icon: lastLayerIcon,
 		image: lastLayer
@@ -113,7 +117,7 @@ export const roadmap = [
 	{
 		title: 'Season 2',
 		description: 'Token Utility',
-		timeline: 'End of December',
+		timeline: '2026',
 		icon: season2Icon,
 		image: season2
 	}
