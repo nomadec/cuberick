@@ -45,13 +45,9 @@ const Home = () => {
 					(acc, item, _, { length }) => acc + item.count / length,
 					0
 				)
-				setDAU(averageDAU)
+				setDAU(Math.ceil(averageDAU))
 
-				const averageMAU = data.monthly_active_users.reduce(
-					(acc, item, _, { length }) => acc + item.count / length,
-					0
-				)
-				setMAU(averageMAU)
+				setMAU(data.monthly_active_users.count)
 			} catch (e) {
 				setConnection(false)
 			}
