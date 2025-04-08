@@ -29,84 +29,84 @@ export const roadmap = [
 	{
 		title: '3D Cube',
 		description: 'Dropping the first-ever multiplayer game engine in TMA',
-		timeline: 'Early December',
+		timeline: 'October 2024',
 		icon: cubeIcon,
 		image: cube
 	},
 	{
 		title: 'Multiplayer',
 		description: 'Get ready to squad up and dive in together',
-		timeline: 'Mid December',
+		timeline: 'November 2024',
 		icon: multiplayerIcon,
 		image: multiplayer
 	},
 	{
 		title: 'Referral System, Tasks',
 		description: 'Dropping the first-ever multiplayer game engine in TMA',
-		timeline: 'End of December',
+		timeline: 'January 2025',
 		icon: referralsIcon,
 		image: referrals
 	},
 	{
 		title: 'New 3D Engine',
 		description: 'Smoother experience for all devices',
-		timeline: 'End of December',
+		timeline: 'March 2025',
 		icon: engineIcon,
 		image: engine
 	},
 	{
-		title: 'Onboarding Mechanics',
-		description: 'Dropping the first-ever multiplayer game engine in TMA',
-		timeline: 'End of December',
-		icon: onboardingIcon,
-		image: onboarding
-	},
-	{
 		title: 'Passive Gameplay',
 		description: 'Harvesters and new tools; earn while you chill',
-		timeline: 'End of December',
+		timeline: 'April 2025',
 		icon: harvesterIcon,
 		image: harvester
 	},
 	{
+		title: 'Onboarding Mechanics',
+		description: 'Dropping the first-ever multiplayer game engine in TMA',
+		timeline: 'May 2025',
+		icon: onboardingIcon,
+		image: onboarding
+	},
+	{
 		title: 'Enhanced Gameplay',
 		description: 'TNT, space anomalies, customizations, skins – full upgrade mode',
-		timeline: 'End of December',
+		timeline: 'Q3 2025',
 		icon: gameplayIcon,
 		image: gameplay
 	},
 	{
 		title: 'Clans',
 		description: 'Form your squads and roll out together',
-		timeline: 'End of December',
+		timeline: 'Q3 2025',
 		icon: clansIcon,
 		image: clans
 	},
 	{
 		title: 'Ads',
 		description: 'Bringing in that sponsored hype on every layer!',
-		timeline: 'End of December',
+		timeline: 'Q3 2025',
 		icon: adsIcon,
 		image: ads
 	},
 	{
 		title: 'MEGA last  layer Event',
 		description: 'Form your squads and roll out together',
-		timeline: 'End of December',
+		timeline: 'Q4 2025',
 		icon: lastLayerIcon,
 		image: lastLayer
 	},
 	{
 		title: 'AirDrop',
 		description: 'Free loot raining down',
-		timeline: 'End of December',
+		timeline: 'Q4 2025',
 		icon: airdropIcon,
 		image: airdrop
 	},
 	{
 		title: 'Listing',
 		description: 'Exchange listing coming your way',
-		timeline: 'End of December',
+		timeline: 'Q4 2025',
 		icon: listingIcon,
 		image: listing
 	},
