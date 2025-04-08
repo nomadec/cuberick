@@ -47,7 +47,7 @@ const Home = () => {
 				)
 				setDAU(Math.ceil(averageDAU))
 
-				setMAU(data.monthly_active_users.count)
+				setMAU(data.monthly_active_users)
 			} catch (e) {
 				setConnection(false)
 			}
