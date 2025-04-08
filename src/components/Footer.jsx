@@ -35,7 +35,9 @@ const Footer = () => {
 					</div>
 				</div>
 				<div className="mt-6 flex flex-col items-start gap-3 sm:mt-10 sm:flex-row sm:items-center sm:justify-between">
-					<p className="text-inter text-white opacity-70">Copyright © 2024 CUBERICK</p>
+					<p className="text-inter text-white opacity-70">
+						Copyright © {new Date().getFullYear()} CUBERICK
+					</p>
 					<Link to="/privacy-policy" className="text-inter text-white opacity-70">
 						Privacy Policy
 					</Link>

@@ -29,7 +29,7 @@ const Header = ({ connection, playersOnline }) => {
 					<div className="relative flex items-center border-4 border-[#390257] bg-[#612FA2] px-2.5 py-1">
 						<img src={accountsSvg} alt="logo" />
 						<span className="font-inter ml-2 text-xs leading-[120%] text-white">
-							{formatNumber(playersOnline)} player <br /> online
+							{formatNumber(playersOnline)} player{playersOnline != 1 && 's'} <br /> online
 						</span>
 						<div className="absolute top-0 left-0 h-1 w-1 bg-[#390257]"></div>
 						<div className="absolute bottom-0 left-0 h-1 w-1 bg-[#390257]"></div>
