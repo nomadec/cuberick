@@ -1,4 +1,4 @@
-import { Route, Routes } from 'react-router'
+import { Navigate, Route, Routes } from 'react-router'
 
 import Home from './screens/Home.jsx'
 import PrivacyPolicy from './screens/PrivacyPolicy.jsx'
@@ -14,6 +14,8 @@ const App = () => {
 				<Route path="/" element={<Home />} />
 				<Route path="/privacy-policy" element={<PrivacyPolicy />} />
 				<Route path="/terms-of-use" element={<TermsOfUse />} />
+
+				<Route path="*" element={<Navigate to="/" />} />
 			</Routes>
 		</>
 	)
