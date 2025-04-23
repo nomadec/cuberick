@@ -1,0 +1,28 @@
+{
+	"name": "Cuberick – First MMO game in Telegram",
+	"short_name": "Cuberick",
+	"description": "Cuberick is a cosmic mining game: tap, break layers, earn CBRICKs, upgrade gear, and reach the core for epic rewards!",
+	"start_url": "/?source=pwa",
+	"scope": "/",
+	"display": "standalone",
+	"background_color": "#060A23",
+	"theme_color": "#3D1799",
+	"icons": [
+		{
+			"src": "/icons/icon-192x192.png",
+			"sizes": "192x192",
+			"type": "image/png"
+		},
+		{
+			"src": "/icons/icon-512x512.png",
+			"sizes": "512x512",
+			"type": "image/png"
+		},
+		{
+			"src": "/icons/apple-touch-icon.png",
+			"sizes": "180x180",
+			"type": "image/png",
+			"purpose": "any maskable"
+		}
+	]
+}
