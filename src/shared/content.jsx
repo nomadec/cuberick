@@ -44,7 +44,7 @@ export const roadmap = [
 	{
 		title: 'Referral System, Tasks',
 		description:
-			'Advanced game engine for TMA that displays hundreds of millions of destructible particles.',
+			'Invite friends with your referral code to earn bonus CBRICK tokens, and complete missions for extra rewards and epic prizes.',
 		timeline: 'January 2025',
 		icon: referralsIcon,
 		image: referrals
@@ -65,8 +65,7 @@ export const roadmap = [
 	},
 	{
 		title: 'Onboarding Mechanics',
-		description:
-			'Advanced game engine for TMA that displays hundreds of millions of destructible particles.',
+		description: 'A playable tutorial quickly teaches the game’s basics to new players.',
 		timeline: 'May 2025',
 		icon: onboardingIcon,
 		image: onboarding
