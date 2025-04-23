@@ -16,7 +16,7 @@ const Header = ({ connection, playersOnline }) => {
 		<header>
 			<div className="container flex justify-between">
 				<div className="relative mr-4 flex items-center border-4 border-[#390257] bg-[#612FA2] px-2.5 py-1 sm:mr-0">
-					<img src={logoSvg} alt="logo" />
+					<img src={logoSvg} alt="logo" loading="lazy" />
 					<span className="font-pixel ml-2 hidden leading-[90%] text-white uppercase sm:inline">
 						Cuberick
 					</span>
@@ -27,7 +27,7 @@ const Header = ({ connection, playersOnline }) => {
 				</div>
 				<div className="flex items-center">
 					<div className="relative flex items-center border-4 border-[#390257] bg-[#612FA2] px-2.5 py-1">
-						<img src={accountsSvg} alt="logo" />
+						<img src={accountsSvg} alt="logo" loading="lazy" />
 						<span className="font-inter ml-2 text-xs leading-[120%] text-white">
 							{formatNumber(playersOnline)} player{playersOnline != 1 && 's'} <br /> online
 						</span>
@@ -43,6 +43,7 @@ const Header = ({ connection, playersOnline }) => {
 								className="pixelated"
 								src={connection ? greenDotSVG : networkErrorSVG}
 								alt="dot"
+								loading="lazy"
 							/>
 							<span className="font-pixel ml-2 text-base leading-[87%] tracking-[-1px] text-white sm:text-lg">
 								{connection ? 'Join squad' : 'No network'}

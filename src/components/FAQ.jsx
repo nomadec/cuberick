@@ -51,6 +51,7 @@ const FAQ = () => {
 										className={clsx(isExpanded && 'scale-x-[-1] rotate-180 transform')}
 										src={arrowDown}
 										alt="arrow"
+										loading="lazy"
 									/>
 								</div>
 								<p

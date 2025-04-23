@@ -16,7 +16,7 @@ const TermsAndConditions = ({ data, heading, text1, text2 }) => {
 				<div className="container flex justify-between">
 					<Link to="/">
 						<div className="relative flex items-center border-4 border-[#390257] bg-[#612FA2] px-2.5 py-1 sm:mr-0">
-							<img src={arrowLeftSvg} alt="arrow left" />
+							<img src={arrowLeftSvg} alt="arrow left" loading="lazy" />
 							<span className="font-inter ml-3 text-2xl leading-[120%] font-medium text-white">
 								Back
 							</span>
@@ -27,7 +27,7 @@ const TermsAndConditions = ({ data, heading, text1, text2 }) => {
 						</div>
 					</Link>
 					<div className="relative flex items-center border-4 border-[#390257] bg-[#612FA2] px-2.5 py-1 sm:mr-0">
-						<img src={logoSvg} alt="logo" />
+						<img src={logoSvg} alt="logo" loading="lazy" />
 						<span className="font-pixel ml-2 leading-[90%] text-white uppercase">Cuberick</span>
 						<div className="absolute top-0 left-0 h-1 w-1 bg-[#390257]"></div>
 						<div className="absolute bottom-0 left-0 h-1 w-1 bg-[#390257]"></div>
@@ -39,7 +39,7 @@ const TermsAndConditions = ({ data, heading, text1, text2 }) => {
 
 			<section className="container-lg mt-10 pb-[30px] sm:mt-[120px]">
 				<div className="relative mx-auto flex w-fit items-center border-5 border-[#211846] bg-[#0A0617] px-3 py-3 sm:px-6 sm:py-4">
-					<img className="w-5 sm:w-6" src={logo2dSvg} alt="arrow" />
+					<img className="w-5 sm:w-6" src={logo2dSvg} alt="arrow" loading="lazy" />
 					<p className="font-inter ml-3 text-xs leading-[145%] font-semibold text-[#B63DE1] sm:text-base">
 						{text1}
 					</p>

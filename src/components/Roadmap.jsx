@@ -30,11 +30,13 @@ const Roadmap = () => {
 						className="absolute -top-8 left-2 h-6 w-6 rotate-180 transform md:-top-[106px] md:left-1/2 md:-translate-x-1/2"
 						src={caretUp}
 						alt="caret up icon"
+						loading="lazy"
 					/>
 					<img
 						className="absolute -bottom-[42px] left-2 h-6 w-6 md:bottom-0 md:left-1/2 md:-translate-x-1/2"
 						src={caretUp}
 						alt="caret up icon"
+						loading="lazy"
 					/>
 					<div className="absolute -top-[10px] -bottom-5 left-[19px] border-l-3 border-dashed border-[#979797] md:-top-[85px] md:bottom-5 md:left-1/2 md:-translate-x-1/2"></div>
 				</div>
@@ -55,8 +57,8 @@ function DesktopItem({ item, index }) {
 						currentStep < index && 'border-[#9500FF]'
 					)}
 				>
-					{currentStep > index && <img src={checkmark} alt="check-mark" />}
-					{currentStep == index && <img src={rocket} alt="check-mark" />}
+					{currentStep > index && <img src={checkmark} alt="check-mark" loading="lazy" />}
+					{currentStep == index && <img src={rocket} alt="check-mark" loading="lazy" />}
 					<span className="font-pixel text-[40px] leading-[87%]">{item.title}</span>
 				</div>
 				<p
@@ -75,7 +77,7 @@ function DesktopItem({ item, index }) {
 					currentStep < index && 'bg-[#9500FF]'
 				)}
 			>
-				<img className="w-10" src={item.icon} alt={`${item.title} icon`} />
+				<img className="w-10" src={item.icon} alt={`${item.title} icon`} loading="lazy" />
 				<div
 					className={clsx(
 						'absolute top-1/2 h-[3px] w-28 -translate-y-1/2 bg-[#60A917]',
@@ -94,6 +96,7 @@ function DesktopItem({ item, index }) {
 						src={item.image}
 						alt={item.title}
 						className="h-full w-full object-cover object-center"
+						loading="lazy"
 					/>
 				</div>
 			</div>
@@ -122,7 +125,7 @@ function MobileItem({ item, index }) {
 					currentStep < index && 'bg-[#9500FF]'
 				)}
 			>
-				<img className="w-7" src={item.icon} alt={`${item.title} icon`} />
+				<img className="w-7" src={item.icon} alt={`${item.title} icon`} loading="lazy" />
 				<div
 					className={clsx(
 						'absolute top-1/2 h-[3px] w-[45vw] -translate-y-1/2 bg-[#60A917]',
@@ -140,8 +143,12 @@ function MobileItem({ item, index }) {
 						currentStep < index && 'border-[#9500FF]'
 					)}
 				>
-					{currentStep > index && <img className="w-5" src={checkmark} alt="check-mark" />}
-					{currentStep == index && <img className="h-5 scale-140" src={rocket} alt="check-mark" />}
+					{currentStep > index && (
+						<img className="w-5" src={checkmark} alt="check-mark" loading="lazy" />
+					)}
+					{currentStep == index && (
+						<img className="h-5 scale-140" src={rocket} alt="check-mark" loading="lazy" />
+					)}
 					<span className="font-pixel text-2xl leading-[87%] whitespace-nowrap">{item.title}</span>
 				</div>
 				<p className="mt-3.5 text-base leading-[130%] font-semibold tracking-[0.5px]">
@@ -156,6 +163,7 @@ function MobileItem({ item, index }) {
 						src={item.image}
 						alt={item.title}
 						className="h-full w-full object-cover object-center"
+						loading="lazy"
 					/>
 				</div>
 			</div>

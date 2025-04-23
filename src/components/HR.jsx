@@ -10,6 +10,7 @@ const HR = ({ rotate = false }) => {
 			className={clsx('absolute w-full', rotate ? 'top-0 rotate-180' : 'bottom-0')}
 			src={pixelatedHR}
 			alt="pixelated-hr"
+			loading="lazy"
 		/>
 	)
 }

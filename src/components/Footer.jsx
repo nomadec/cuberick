@@ -14,24 +14,24 @@ const Footer = () => {
 			<div className="container-sm">
 				<div className="flex w-full items-center">
 					<div className="w-full">
-						<img className="w-full" src={instagram} alt="instagram" />
+						<img className="w-full" src={instagram} alt="instagram" loading="lazy" />
 					</div>
 					<div className="w-full">
 						<a href="https://t.me/cuberick_official" target="_blank" rel="noreferrer">
-							<img className="w-full" src={telegram} alt="telegram" />
+							<img className="w-full" src={telegram} alt="telegram" loading="lazy" />
 						</a>
 					</div>
 					<div className="w-full">
-						<img className="w-full" src={tiktok} alt="tiktok" />
+						<img className="w-full" src={tiktok} alt="tiktok" loading="lazy" />
 					</div>
 					<div className="w-full">
-						<img className="w-full" src={discord} alt="discord" />
+						<img className="w-full" src={discord} alt="discord" loading="lazy" />
 					</div>
 					<div className="w-full">
-						<img className="w-full" src={youtube} alt="youtube" />
+						<img className="w-full" src={youtube} alt="youtube" loading="lazy" />
 					</div>
 					<div className="w-full">
-						<img className="w-full" src={twitter} alt="twitter" />
+						<img className="w-full" src={twitter} alt="twitter" loading="lazy" />
 					</div>
 				</div>
 				<div className="mt-6 flex flex-col items-start gap-3 sm:mt-10 sm:flex-row sm:items-center sm:justify-between">
