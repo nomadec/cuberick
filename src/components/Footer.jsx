@@ -14,24 +14,24 @@ const Footer = () => {
 			<div className="container-sm">
 				<div className="flex w-full items-center">
 					<div className="w-full">
-						<img className="w-full" src={instagram} alt="instagram" loading="lazy" />
+						<img className="w-full" src={instagram} alt="instagram icon" loading="lazy" />
 					</div>
 					<div className="w-full">
 						<a href="https://t.me/cuberick_official" target="_blank" rel="noreferrer">
-							<img className="w-full" src={telegram} alt="telegram" loading="lazy" />
+							<img className="w-full" src={telegram} alt="telegram icon" loading="lazy" />
 						</a>
 					</div>
 					<div className="w-full">
-						<img className="w-full" src={tiktok} alt="tiktok" loading="lazy" />
+						<img className="w-full" src={tiktok} alt="tiktok icon" loading="lazy" />
 					</div>
 					<div className="w-full">
-						<img className="w-full" src={discord} alt="discord" loading="lazy" />
+						<img className="w-full" src={discord} alt="discord icon" loading="lazy" />
 					</div>
 					<div className="w-full">
-						<img className="w-full" src={youtube} alt="youtube" loading="lazy" />
+						<img className="w-full" src={youtube} alt="youtube icon" loading="lazy" />
 					</div>
 					<div className="w-full">
-						<img className="w-full" src={twitter} alt="twitter" loading="lazy" />
+						<img className="w-full" src={twitter} alt="twitter icon" loading="lazy" />
 					</div>
 				</div>
 				<div className="mt-6 flex flex-col items-start gap-3 sm:mt-10 sm:flex-row sm:items-center sm:justify-between">
