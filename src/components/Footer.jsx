@@ -41,7 +41,7 @@ const Footer = () => {
 					<Link to="/privacy-policy" className="text-inter text-white opacity-70">
 						Privacy Policy
 					</Link>
-					<Link to="terms-of-use" className="text-inter text-white opacity-70">
+					<Link to="/terms-of-use" className="text-inter text-white opacity-70">
 						Terms of Use
 					</Link>
 				</div>
