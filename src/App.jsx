@@ -1,5 +1,6 @@
 import { Navigate, Route, Routes } from 'react-router'
 
+import Competition from './screens/Competition.jsx'
 import Home from './screens/Home.jsx'
 import PrivacyPolicy from './screens/PrivacyPolicy.jsx'
 import TermsOfUse from './screens/TermsOfUse.jsx'
@@ -14,6 +15,7 @@ const App = () => {
 				<Route path="/" element={<Home />} />
 				<Route path="/privacy-policy" element={<PrivacyPolicy />} />
 				<Route path="/terms-of-use" element={<TermsOfUse />} />
+				<Route path="/competition" element={<Competition />} />
 
 				<Route path="*" element={<Navigate to="/" />} />
 			</Routes>
