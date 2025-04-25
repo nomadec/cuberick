@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types'
 import React from 'react'
-import { Link } from 'react-router'
 
 import CoinSVG from '../assets/coin.svg'
 
@@ -26,15 +25,15 @@ const Hero = ({ connection, playersOnline }) => {
 						/>
 					</span>
 				</h1>
-				<Link to="/competition">
-					<div className="relative w-fit mt-3 sm:mt-10 mx-auto flex h-min items-center bg-[#FFAE00] px-4 py-2 shadow-[6.05px_6.05px_0px_0px_#C26D17]">
-						<span className="font-pixel ml-2 text-base leading-[87%] tracking-[-1px] text-[#0A0A0A] sm:text-lg">
-							Learn more
-						</span>
-						<div className="absolute top-0 left-[26px] h-full w-[15px] -skew-x-[30deg] transform bg-white opacity-15"></div>
-						<div className="absolute top-0 left-[48px] h-full w-2.5 -skew-x-[30deg] transform bg-white opacity-15"></div>
-					</div>
-				</Link>
+				{/* <Link to="/competition"> */}
+				<div className="relative w-fit mt-3 sm:mt-10 mx-auto flex h-min items-center bg-[#FFAE00] px-4 py-2 shadow-[6.05px_6.05px_0px_0px_#C26D17]">
+					<span className="font-pixel ml-2 text-base leading-[87%] tracking-[-1px] text-[#0A0A0A] sm:text-lg">
+						Learn more
+					</span>
+					<div className="absolute top-0 left-[26px] h-full w-[15px] -skew-x-[30deg] transform bg-white opacity-15"></div>
+					<div className="absolute top-0 left-[48px] h-full w-2.5 -skew-x-[30deg] transform bg-white opacity-15"></div>
+				</div>
+				{/* </Link> */}
 			</div>
 			<HR />
 		</div>
