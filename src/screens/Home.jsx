@@ -4,8 +4,8 @@ import { useEffect, useState } from 'react'
 import ContactUs from '../components/ContactUs.jsx'
 import FAQ from '../components/FAQ.jsx'
 import Footer from '../components/Footer.jsx'
-import Hero from '../components/Hero.jsx'
 import Numbers from '../components/Numbers.jsx'
+import OldHero from '../components/OldHero.jsx'
 import Roadmap from '../components/Roadmap.jsx'
 
 import { BASE_URL } from '../shared/consts.js'
@@ -62,7 +62,8 @@ const Home = () => {
 
 	return (
 		<div>
-			<Hero connection={connection} playersOnline={playersOnline} />
+			{/* <Hero connection={connection} playersOnline={playersOnline} /> */}
+			<OldHero connection={connection} playersOnline={playersOnline} />
 			<Numbers totalPlayers={totalPlayers} DAU={DAU} MAU={MAU} />
 			<Roadmap />
 			<FAQ />

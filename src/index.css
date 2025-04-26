@@ -48,9 +48,16 @@ body {
 			4px -4px 0 black,
 			-4px -4px 0 black;
 	}
-	.text-outline {
-		box-sizing: content-box;
-		-webkit-text-stroke: 0.81px #060606;
+	.old-hero-text-outline {
+		text-shadow:
+			-0.81px 0px 0 #060606,
+			0px -0.81px 0 #060606,
+			0.81px 0px 0 #060606,
+			0px 0.81px 0 #060606,
+			0.81px 0.81px 0 #060606,
+			-0.81px 0.81px 0 #060606,
+			0.81px -0.81px 0 #060606,
+			-0.81px -0.81px 0 #060606;
 	}
 
 	.coin-glow {
@@ -59,7 +66,15 @@ body {
 }
 
 @media (width >= 40rem /* 640px */) {
-	.text-outline {
-		-webkit-text-stroke: 4px #060606;
+	.old-hero-text-outline {
+		text-shadow:
+			-2px 0px 0 #060606,
+			0px -2px 0 #060606,
+			2px 0px 0 #060606,
+			0px 2px 0 #060606,
+			2px 2px 0 #060606,
+			-2px 2px 0 #060606,
+			2px -2px 0 #060606,
+			-2px -2px 0 #060606;
 	}
 }
