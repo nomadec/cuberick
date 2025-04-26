@@ -22,29 +22,65 @@ const nominations = [
 	{
 		id: 'most-taps',
 		title: 'Top miner',
-		description:
-			"Smash as many cubes as you can within the contest timeframe! Only cubes broken DURING the contest will count—previously broken cubes. DON'T COUNT!",
+		description: (
+			<>
+				Smash as many cubes as you can within the contest timeframe! <br /> Only cubes broken DURING
+				the contest will count—previously broken cubes. DON&apos;T COUNT!
+			</>
+		),
 		image: mostTaps
 	},
 	{
 		id: 'best-pixel-art',
 		title: 'Pixel art master',
-		description:
-			'Show off your artistic skills! Post a sketch of your pixel art idea in our chat using the hashtag #cuberickpixelart. Final pixel art must be at least 100x100 cubes in size. After completion, submit a screenshot in the chat using the SAME hashtag. We WILL verify authorship, so please—NO CHEATING! ',
+		description: (
+			<>
+				Show off your artistic skills! Post a sketch of your pixel art idea in{' '}
+				<a
+					className="underline font-bold"
+					href="https://t.me/cuberick_chat"
+					target="_blank"
+					rel="noreferrer"
+				>
+					our chat
+				</a>{' '}
+				using the hashtag <span className="underline font-bold">#cuberickpixelart</span>. <br />
+				Final pixel art must be at least 100x100 cubes in size. <br /> After completion, submit a
+				screenshot in the chat using the SAME hashtag. We WILL verify authorship, so please — NO
+				CHEATING!
+			</>
+		),
 		image: bestPixelArt
 	},
 	{
 		id: 'most-invites',
 		title: 'Invite champion',
-		description:
-			'Show off your artistic skills! Post a sketch of your pixel art idea in our chat using the hashtag #cuberickpixelart. Final pixel art must be at least 100x100 cubes in size. After completion, submit a screenshot in the chat using the SAME hashtag. We WILL verify authorship, so please—NO CHEATING!',
+		description: (
+			<>
+				Invite as many friends as you can during the contest period! <br /> Only NEW invites count -
+				old invites will NOT be considered!
+			</>
+		),
 		image: mostInvites
 	},
 	{
 		id: 'best-tiktok',
 		title: 'TikTok star',
-		description:
-			'Show off your artistic skills! Post a sketch of your pixel art idea in our chat using the hashtag #cuberickpixelart. Final pixel art must be at least 100x100 cubes in size. After completion, submit a screenshot in the chat using the SAME hashtag. We WILL verify authorship, so please—NO CHEATING!',
+		description: (
+			<>
+				Create a viral TikTok video about Cuberick! <br /> Fill out the{' '}
+				<a
+					className="underline font-bold"
+					href="https://docs.google.com/forms/d/e/1FAIpQLSel4tP1zWtIKit24GQ-tRGWICD0gzLAS6e9w6IU3rb1Uw8AHg/viewform"
+					target="_blank"
+					rel="noreferrer"
+				>
+					Google Form
+				</a>
+				. <br /> In google form include your Telegram account (EXACT THE SAME AS USED IN GAME) and
+				your TikTok video link. <br /> Submit as many videos as you like - NO LIMIT ON ENTRIES!
+			</>
+		),
 		image: bestTiktok
 	}
 ]
