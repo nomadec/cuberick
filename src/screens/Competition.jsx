@@ -203,12 +203,22 @@ function Hero() {
 			<div className="absolute container left-1/2 -translate-x-1/2 bottom-[10%]">
 				<h1 className="font-pixel mt-[50%] text-center text-[28px] leading-[105%] text-white sm:mt-24 sm:text-[46px] sm:leading-[87%] sm:tracking-[-0.6px]">
 					EPIC CUBERICK CONTES
-					<span className="relative mr-10">
+					<span className="relative">
 						T
 						<img
 							src={CoinSVG}
 							alt="coin icon"
-							className="min-w-8 sm:min-w-11 absolute -right-[200%] top-1/2 -translate-y-1/2 coin-glow"
+							className="min-w-5 sm:min-w-11 absolute right-[100%] -top-[75%] sm:-right-[200%] sm:top-1/2 sm:-translate-y-1/2 coin-glow"
+						/>
+						<img
+							src={CoinSVG}
+							alt="coin icon"
+							className="min-w-5 sm:min-w-11 rotate-12 right-[35%] -top-[70%] absolute sm:-right-[290%] sm:top-1/2 sm:-translate-y-1/2 coin-glow z-10"
+						/>
+						<img
+							src={CoinSVG}
+							alt="coin icon"
+							className="min-w-5 sm:min-w-11 absolute -right-[35%] -top-[65%] sm:-right-[380%] sm:top-1/2 sm:-translate-y-1/2 coin-glow"
 						/>
 					</span>
 				</h1>
