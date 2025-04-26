@@ -106,7 +106,7 @@ const Competition = () => {
 						<div
 							key={item.place}
 							className={clsx(
-								`relative w-full border-5 bg-cover bg-center bg-no-repeat`,
+								`relative w-full border-5 bg-cover bg-center bg-no-repeat pixelated`,
 								item.place === 1 && 'sm:order-1 h-[343px]',
 								item.place === 2 && 'h-[323px]',
 								item.place === 3 && 'sm:order-2 h-[303px]'
@@ -168,7 +168,7 @@ const Competition = () => {
 							<img
 								src={item.image}
 								alt={item.title}
-								className="h-full w-full object-cover object-center"
+								className="h-full w-full object-cover object-center pixelated"
 								loading="lazy"
 							/>
 							<div className="absolute top-0 left-0 h-[5px] w-[5px] bg-[#3A3A3A]"></div>
