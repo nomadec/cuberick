@@ -22,16 +22,18 @@ const SecondaryHeader = () => {
 						<div className="absolute right-0 bottom-0 h-1 w-1 bg-[#390257]"></div>
 					</div>
 				</Link>
-				<div className="relative flex items-center border-4 border-[#390257] bg-[#612FA2] px-2.5 py-1 sm:mr-0">
-					<img src={logoSvg} alt="logo" loading="lazy" />
-					<span className="hidden sm:inline font-pixel ml-2 leading-[90%] text-white uppercase">
-						Cuberick
-					</span>
-					<div className="absolute top-0 left-0 h-1 w-1 bg-[#390257]"></div>
-					<div className="absolute bottom-0 left-0 h-1 w-1 bg-[#390257]"></div>
-					<div className="absolute top-0 right-0 h-1 w-1 bg-[#390257]"></div>
-					<div className="absolute right-0 bottom-0 h-1 w-1 bg-[#390257]"></div>
-				</div>
+				<Link to="/">
+					<div className="relative flex items-center border-4 border-[#390257] bg-[#612FA2] px-2.5 py-1 sm:mr-0">
+						<img src={logoSvg} alt="logo" loading="lazy" />
+						<span className="hidden sm:inline font-pixel ml-2 leading-[90%] text-white uppercase">
+							Cuberick
+						</span>
+						<div className="absolute top-0 left-0 h-1 w-1 bg-[#390257]"></div>
+						<div className="absolute bottom-0 left-0 h-1 w-1 bg-[#390257]"></div>
+						<div className="absolute top-0 right-0 h-1 w-1 bg-[#390257]"></div>
+						<div className="absolute right-0 bottom-0 h-1 w-1 bg-[#390257]"></div>
+					</div>
+				</Link>
 			</div>
 		</header>
 	)
