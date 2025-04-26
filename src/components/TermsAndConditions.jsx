@@ -1,41 +1,15 @@
 import PropTypes from 'prop-types'
 import React from 'react'
-import { Link } from 'react-router'
 
-import arrowLeftSvg from '../assets/icons/arrow-left.svg'
 import logo2dSvg from '../assets/icons/logo-2d.svg'
 
 import Footer from './Footer.jsx'
-// eslint-disable-next-line import/no-unresolved
-import logoSvg from '/logo.svg'
+import SecondaryHeader from './SecondaryHeader.jsx'
 
 const TermsAndConditions = ({ data, heading, text1, text2 }) => {
 	return (
-		<main>
-			<header className="pt-6">
-				<div className="container flex justify-between">
-					<Link to="/">
-						<div className="relative flex items-center border-4 border-[#390257] bg-[#612FA2] px-2.5 py-1 sm:mr-0">
-							<img src={arrowLeftSvg} alt="arrow left" loading="lazy" />
-							<span className="font-inter ml-3 text-2xl leading-[120%] font-medium text-white">
-								Back
-							</span>
-							<div className="absolute top-0 left-0 h-1 w-1 bg-[#390257]"></div>
-							<div className="absolute bottom-0 left-0 h-1 w-1 bg-[#390257]"></div>
-							<div className="absolute top-0 right-0 h-1 w-1 bg-[#390257]"></div>
-							<div className="absolute right-0 bottom-0 h-1 w-1 bg-[#390257]"></div>
-						</div>
-					</Link>
-					<div className="relative flex items-center border-4 border-[#390257] bg-[#612FA2] px-2.5 py-1 sm:mr-0">
-						<img src={logoSvg} alt="logo" loading="lazy" />
-						<span className="font-pixel ml-2 leading-[90%] text-white uppercase">Cuberick</span>
-						<div className="absolute top-0 left-0 h-1 w-1 bg-[#390257]"></div>
-						<div className="absolute bottom-0 left-0 h-1 w-1 bg-[#390257]"></div>
-						<div className="absolute top-0 right-0 h-1 w-1 bg-[#390257]"></div>
-						<div className="absolute right-0 bottom-0 h-1 w-1 bg-[#390257]"></div>
-					</div>
-				</div>
-			</header>
+		<main className="pt-6">
+			<SecondaryHeader />
 
 			<section className="container-lg mt-10 pb-[30px] sm:mt-[120px]">
 				<div className="relative mx-auto flex w-fit items-center border-5 border-[#211846] bg-[#0A0617] px-3 py-3 sm:px-6 sm:py-4">
