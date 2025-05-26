@@ -10,7 +10,7 @@ import rocket from '../assets/icons/rocket.svg'
 
 import HR from './HR.jsx'
 
-const currentStep = 4
+const currentStep = 5
 
 const Roadmap = () => {
 	return (
